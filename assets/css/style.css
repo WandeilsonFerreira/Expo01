@@ -182,8 +182,11 @@ button:hover{
   }
 
   button{
-    width: calc(100% - 20px);
-    
+    width: calc(100% - 20px);    
+  }
+
+  #resultado {
+  font-size: 12px;
   }
 }
 
