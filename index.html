@@ -10,47 +10,49 @@
   <title>Distância | Segurança</title>
 </head>
 <body>
-  <section>    
-    <form action="post">
-      <h1>Distância de segurança</h1>   
-      <fieldset>
-        <div class="container">
-          <input type="number" id="qtdExplosivo" required name="qtdExplosivo" autofocus>
-          <label>Informe o peso total do explosivo em gramas</label> 
-        </div>
-      </fieldset>
+  <main>
+    <section>    
+      <form action="post">
+        <h1>Distância de segurança</h1>   
+        <fieldset>
+          <div class="container">
+            <input type="number" id="qtdExplosivo" required name="qtdExplosivo" autofocus>
+            <label>Informe o peso total do explosivo em gramas</label> 
+          </div>
+        </fieldset>
 
-      <fieldset>
-        <div class="container">
-          <input type="number" id="qtdGramatura" required name="qtdGramatura" autofocus>
-          <label>Informe a gramatura da nitropenta em gramas </label> 
-        </div>
-      </fieldset>    
+        <fieldset>
+          <div class="container">
+            <input type="number" id="qtdGramatura" required name="qtdGramatura" autofocus>
+            <label>Informe a gramatura da nitropenta em gramas </label> 
+          </div>
+        </fieldset>    
 
-      <fieldset>
-        <div class="container">    
-          <select name="fatoRelatividade" id="fatoRelatividade">            
-            <option value="" selected>...</option>
-            <option value="0.42">NITRATO DE AMÔNIA</option>
-            <option value="0.55">POLVORA NEGRA</option>
-            <option value="0.92">DINAMITE MILITAR</option>
-            <option value="1">TNT</option>
-            <option value="1.19">PLASTEX</option>
-            <option value="1.34">C-4 (RDX)</option>
-            <option value="1.66">CORDEL PETN</option>
-            <option value="1.66">TUBO DE CHOQUE COM ESPOLETA</option>
-            <option value="1.68">DEMEX</option>
-          </select>                   
-        </div>
-      </fieldset>   
+        <fieldset>
+          <div class="container">    
+            <select name="fatoRelatividade" id="fatoRelatividade">            
+              <option value="" selected>...</option>
+              <option value="0.42">NITRATO DE AMÔNIA</option>
+              <option value="0.55">POLVORA NEGRA</option>
+              <option value="0.92">DINAMITE MILITAR</option>
+              <option value="1">TNT</option>
+              <option value="1.19">PLASTEX</option>
+              <option value="1.34">C-4 (RDX)</option>
+              <option value="1.66">CORDEL PETN</option>
+              <option value="1.66">TUBO DE CHOQUE COM ESPOLETA</option>
+              <option value="1.68">DEMEX</option>
+            </select>                   
+          </div>
+        </fieldset>   
+      </form>
 
-    </form>
+      <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
+      <div id="resultado"></div>
+      
+      <img src="/assets/img/logo.png" alt="Brasão explosivistas PMPB">   
+    </section>   
+  </main>
+ 
 
-
-    <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
-    <div id="resultado"></div>
-  </section>
-  <img src="/assets/img/logo.png" alt="Imagem logo Softex">
-  
 </body>
 </html>

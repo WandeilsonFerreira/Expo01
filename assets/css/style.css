@@ -8,12 +8,14 @@
 
 
 body{
+  padding: 20px 0 20px 0;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;  
-  font-family: 'Ubuntu', sans-serif; 
-} 
+  font-family: 'Ubuntu', sans-serif;    
+}  
 
 section{  
   background:#fff;
@@ -22,14 +24,21 @@ section{
   box-shadow: 5px 5px 15px;
   max-width: 200vw;
 }
+section img{
+  width: 100%;
+  height: 200px;  
+  right: 15px;
+  bottom: 15px;  
+}
 
 section h1{
   padding: 40px 10px;
   text-align: center;
-}
+} 
 
 fieldset{
   border: none;
+  width: 90%;
 }
 
 fieldset:nth-child(2){
@@ -126,7 +135,7 @@ button:hover{
   border-radius: 4px;
 
 }
-img{
+#base{
   width: 400px;
   height: 200px;
   position: fixed;
@@ -134,3 +143,18 @@ img{
   bottom: 15px;  
 }
 
+@media only screen and (max-width: 923px){
+  main{
+    margin: 0 auto;
+    height: calc(100vh - 330px);  
+    display: block;
+  }
+ 
+}
+@media only screen and (max-width: 717px){
+  main{
+    margin: 0 auto;
+    height: calc(100vh - 330px);  
+    display: block;    
+  }
+}
