@@ -68,6 +68,9 @@ fieldset:nth-child(5){
 
 }
 .container{
+  flex: 1 1 100vw;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 450px;
 }
@@ -155,7 +158,11 @@ button:hover{
 	main {
 		flex: 1 1 80vw;
     justify-content: center;
-    align-items: center;
+    align-items: center;     
 	}
+
+  section{
+    background: green;
+  }
 }
 
