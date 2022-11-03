@@ -151,3 +151,11 @@ button:hover{
 }
 
 
+@media screen and (max-device-width: 480px) {
+	main {
+		flex: 1 1 80vw;
+    justify-content: center;
+    align-items: center;
+	}
+}
+
