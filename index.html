@@ -24,9 +24,10 @@
         <fieldset>
           <div class="container">
             <input type="number" id="qtdGramatura" required name="qtdGramatura" autofocus>
-            <label>Informe a gramatura em gramas </label> 
+            <label>Informe a gramatura </label> 
           </div>
         </fieldset>    
+
 
         <fieldset>
           <div class="container">    
@@ -44,6 +45,31 @@
             </select>                   
           </div>
         </fieldset>   
+
+        <h1>Pressão Inerna</h1>
+
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="1" id="largura" required name="largura" autofocus>
+            <label>Informe a largura do cômodo: </label> 
+          </div>
+        </fieldset>  
+        
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="1" id="altura" required name="altura" autofocus>
+            <label>Informe a altura cômodo: </label> 
+          </div>
+        </fieldset>   
+
+        <fieldset>
+          <div class="container">
+            <input type="number" step="0.1"  value="1" id="profundidade" required name="profundidade" autofocus>
+            <label>Informe a profundidade cômodo: </label> 
+          </div>
+        </fieldset>   
+
+
       </form>
 
       <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
