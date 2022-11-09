@@ -11,6 +11,7 @@ function calculoDistancia(){
 
 
   var resultado = document.getElementById('resultado');
+  var psi = document.getElementById('psi');
 
   if(qtdExplosivo != '' && gramatura != '' && fr !=''){
     var ple = qtdExplosivo * gramatura;
@@ -22,6 +23,26 @@ function calculoDistancia(){
     var pressaoInterna = 2410*(libras/(altura*largura*profundidade))*0.72;
     
     resultado.innerHTML = `A distância segura é de <strong> ${distanciaMetros.toFixed(2)}</strong> metros aproximadamente.<br><br>Com a utilização do escudo: <strong> ${(distanciaMetros*0.5).toFixed(2)}</strong> metros aproximadamente.<br><br> A presesão interna é de <strong>${(pressaoInterna).toFixed(2)}</strong> p.s.i`;
+
+    if(pressaoInterna > 0 && pressaoInterna  <= 5.0){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Limite para danos auditivos</strong>`
+    }
+    else if (pressaoInterna >5.0 && pressaoInterna <= 29.0){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>50% perda auditiva</strong>`
+    }
+    else if (pressaoInterna > 29.0 && pressaoInterna <= 30.0){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Possível chance de danos pulmonais</strong>`
+    }
+    else if (pressaoInterna > 30.0 && pressaoInterna <= 100.0){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Possível chance de morte</strong>`;
+    }
+    else if (pressaoInterna > 199.0 ){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Morte</strong>`
+    }
+    else{
+      psi.innerHTML = `${pressaoInterna}  Valores de entrada incorretos`
+    }   
+        
   } else {
     alert("Preencha todos os campos!");
   }

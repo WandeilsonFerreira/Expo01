@@ -32,16 +32,16 @@
         <fieldset>
           <div class="container">    
             <select name="fatoRelatividade" id="fatoRelatividade">            
-              <option value="" selected>...</option>
-              <option value="0.42">NITRATO DE AMÔNIA</option>
-              <option value="0.55">POLVORA NEGRA</option>
-              <option value="0.92">DINAMITE MILITAR</option>
+              <option value="">...</option>
+              <option value="0.42">0.42 NITRATO DE AMÔNIA </option>
+              <option value="0.55">0.55 POLVORA NEGRA</option>
+              <option value="0.92">0.92 DINAMITE MILITAR</option>
               <option value="1">TNT</option>
-              <option value="1.19">PLASTEX</option>
-              <option value="1.34">C-4 (RDX)</option>
-              <option value="1.66">CORDEL PETN</option>
-              <option value="1.66">TUBO DE CHOQUE COM ESPOLETA</option>
-              <option value="1.68">DEMEX</option>
+              <option value="1.19">1.19 PLASTEX</option>
+              <option value="1.34">1.34 C-4 (RDX)</option>
+              <option value="1.66" selected>1.66 CORDEL PETN</option>
+              <option value="1.66">1.66 TUBO DE CHOQUE COM ESPOLETA</option>
+              <option value="1.68">1.68 DEMEX</option>
             </select>                   
           </div>
         </fieldset>   
@@ -57,7 +57,7 @@
         
         <fieldset>
           <div class="container">
-            <input type="number" step="0.1"  value="3" id="altura" required name="altura" autofocus>
+            <input type="number" step="0.1"  value="2.8" id="altura" required name="altura" autofocus>
             <label>Informe a altura cômodo: </label> 
           </div>
         </fieldset>   
@@ -73,7 +73,8 @@
       </form>
 
       <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
-      <div id="resultado"></div>
+      <div id="resultado"></div>    
+      <div id="psi"></div>
       
       <img src="/assets/img/logo.png" alt="Brasão explosivistas PMPB">   
     </section>   
