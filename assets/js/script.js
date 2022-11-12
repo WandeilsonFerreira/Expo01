@@ -18,7 +18,7 @@ function calculoDistancia(){
     var pleTnt = ple * fr;
     var grains = pleTnt * 15.4;
     var libras = grains / 7000;
-    var distancia = (18 * (Math.sqrt(libras)))  ;
+    var distancia = (18 * (Math.pow(libras,3)))  ;
     var distanciaMetros = distancia * 0.32;
     var pressaoInterna = 2410*(libras/(altura*largura*profundidade))*0.72;
     
