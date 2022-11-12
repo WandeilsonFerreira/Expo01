@@ -27,16 +27,16 @@ function calculoDistancia(){
     if(pressaoInterna > 0 && pressaoInterna  <= 5.0){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Limite para danos auditivos</strong>`
     }
-    else if (pressaoInterna >5.0 && pressaoInterna <= 29.0){
+    else if (pressaoInterna >5.0 && pressaoInterna <= 15.0){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>50% perda auditiva</strong>`
     }
-    else if (pressaoInterna > 29.0 && pressaoInterna <= 30.0){
+    else if (pressaoInterna > 15.0 && pressaoInterna <= 40.0){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Possível chance de danos pulmonais</strong>`
     }
-    else if (pressaoInterna > 30.0 && pressaoInterna <= 100.0){
+    else if (pressaoInterna > 40.0 && pressaoInterna <= 100.0){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Possível chance de morte</strong>`;
     }
-    else if (pressaoInterna > 199.0 ){
+    else if (pressaoInterna > 100.0 ){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Morte</strong>`
     }
     else{
