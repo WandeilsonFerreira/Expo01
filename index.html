@@ -16,14 +16,14 @@
         <h1>Distância de segurança</h1>          
         <fieldset>
           <div class="container">
-            <input type="number" id="qtdExplosivo" required name="qtdExplosivo" autofocus>
+            <input type="number" step="0.1" id="qtdExplosivo" required name="qtdExplosivo" autofocus>
             <label>Informe o peso total do explosivo</label> 
           </div>
         </fieldset>
 
         <fieldset>
           <div class="container">
-            <input type="number" id="qtdGramatura" required name="qtdGramatura" autofocus>
+            <input type="number" step="1"  id="qtdGramatura" required name="qtdGramatura" autofocus>
             <label>Informe a gramatura </label> 
           </div>
         </fieldset>    
@@ -68,8 +68,6 @@
             <label>Informe a profundidade cômodo: </label> 
           </div>
         </fieldset>   
-
-
       </form>
 
       <button id="calcular" onclick="calculoDistancia()">Calcular</button>  
