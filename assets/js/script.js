@@ -23,7 +23,10 @@ function calculoDistancia(){
     
     resultado.innerHTML = `A distância segura é de <strong> ${distanciaMetros.toFixed(2)}</strong> metros aproximadamente.<br><br>Com a utilização do escudo: <strong> ${(distanciaMetros*0.5).toFixed(2)}</strong> metros aproximadamente.<br><br> A presesão interna é de <strong>${(pressaoInterna).toFixed(2)}</strong> p.s.i`;
 
-    if(pressaoInterna >= 0 && pressaoInterna  <= 5.0){
+    if(pressaoInterna >.00 && pressaoInterna  < 5.0){
+      psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Valores inferiores a 5 p.s.i não causam danos auditivos </strong>`
+    }
+    else if(pressaoInterna = 5.0){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Limite para danos auditivos</strong>`
     }
     else if (pressaoInterna >5.0 && pressaoInterna <= 15.0){
@@ -42,7 +45,7 @@ function calculoDistancia(){
       psi.innerHTML = `Efeito da pressão sobre o corpo: <br><strong>Morte</strong>`
     }
     else{
-      psi.innerHTML = `${pressaoInterna}  Valores de entrada incorretos`
+      psi.innerHTML = `Nivel de pressão interna com valores extremos: ${pressaoInterna}   `
     }   
         
   } else {
